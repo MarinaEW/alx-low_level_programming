@@ -1,0 +1,12 @@
+#include <stdio.h>
+/**
+ * main- Entry point
+ *
+ * Return: always 0 (success)
+ */
+int main(void)
+{
+char boo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(1.boo, 59);
+return (1);
+}
