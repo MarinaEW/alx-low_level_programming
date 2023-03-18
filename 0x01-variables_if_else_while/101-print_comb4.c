@@ -11,15 +11,15 @@ int n;
 int m;
 for (i = 0 ; i < 10 ; i++)
 {
-for (n = 0 ; n < 10 ; n++)
+for (n = 1 ; n < 10 ; n++)
 {
-for (m = 0 ; m < 0 ; m++)
+for (m = 2 ; m < 10 ; m++)
 {
 if (i < n && n < m)
 {
 putchar(i + '0');
 putchar(n + '0');
-putchar(m + 'm');
+putchar(m + '0');
 if (i + n + m != 24)
 {
 putchar(',');
