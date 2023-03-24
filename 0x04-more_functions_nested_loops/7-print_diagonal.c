@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - fn. that prints line for n times
+ * print_diagonal - fn. that prints line for n times
  * @n: parameter
  */
 void print_diagonal(int n)
