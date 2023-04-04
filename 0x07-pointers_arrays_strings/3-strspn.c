@@ -11,7 +11,7 @@ unsigned int str1;
 unsigned int str2;
 for (str1 = 0 ; s[str1] != '\0' ; str1++)
 {
-for (str2 = 0 ; accept[str2] != s[str2] ; str2++)
+for (str2 = 0 ; accept[str2] != s[str1] ; str2++)
 {
 if (accept[str2] == '\0')
 return (str1);
