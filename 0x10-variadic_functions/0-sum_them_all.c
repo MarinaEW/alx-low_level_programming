@@ -16,7 +16,7 @@ return (0);
 va_start(list, n);
 sum = 0;
 for (i = 0; i < n; i++)
-sum = sum + va_arg(list , int);
+sum = sum + va_arg(list, int);
 va_end(list);
 return (sum);
 }
