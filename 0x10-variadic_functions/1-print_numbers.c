@@ -10,7 +10,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 va_list list;
 unsigned int i;
 va_start(list , n);
-if (n <= 0)
+if (n == 0)
 {
 printf("\n");
 return;
