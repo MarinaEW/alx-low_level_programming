@@ -10,7 +10,6 @@
 int main(int argc, char *argv[])
 {
 int sum = 0;
-int i;
 char *c;
 if (argc == 1)
 {
@@ -18,9 +17,9 @@ printf("0\n");
 return (0);
 }
 
-for (i = 1; i < argc; i++)
+while (--argc)
 {
-for (c = 0; *c; c++)
+for (c = argv[argc]; *c; c++)
 {
 if (*c < 48 || *c > 57)
 {
