@@ -24,7 +24,7 @@ s2 = "\0";
 }
 size_s1 = strlen(s1);
 size_s2 = strlen(s2);
-ptr = malloc((size_s1 + size_s2) * sizeof(char) + 1);
+ptr = malloc((size_s1 + size_s2) *sizeof(char) + 1);
 if (ptr == 0)
 return (0);
 for (i = 0; i <= size_s1 + size_s2; i++)
