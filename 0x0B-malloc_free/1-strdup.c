@@ -13,12 +13,16 @@ int i;
 int size;
 char *ptr;
 if (str == 0)
+{
 return (0);
+}
 for (size = 0; str[size] != '\0'; size++)
 ptr = malloc(size * sizeof(*str) + 1);
 /*+1 on the size puts the end of string character*/
 if (ptr == 0)
+{
 return (0);
+}
 else
 {
 for (i = 0; i < size; i++)
