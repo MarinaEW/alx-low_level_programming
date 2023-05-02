@@ -7,16 +7,16 @@
 
 void free_listint2(listint_t **head)
 {
-listint_t *dnode, *tmp;
-if (!head)
-return;
+listint_t *dnode, *temp;
 
 dnode = *head;
-while (dnode)
+
+while (dnode != 0)
 {
-tmp = dnode;
+temp = dnode;
 dnode = dnode->next;
-free(dnode);
+free(temp);
 }
+
 *head = NULL;
 }
