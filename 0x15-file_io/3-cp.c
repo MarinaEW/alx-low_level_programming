@@ -4,7 +4,7 @@
 #define ERR_NOREAD "Error: Can't read from file %s\n"
 #define ERR_NOWRITE "Error: Can't write to %s\n"
 #define ERR_NOCLOSE "Error: Can't close fd %d\n"
-#define PERMISSIONS (S_IRUSR | S_IWUSO | S_IRGRP | S_IWGRP | S_IROTH)
+#define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 
 /**
 * main - main
@@ -24,7 +24,7 @@ from_fp = open(argv[1], O_RDONLY);
 
 if (from_fp == -1)
 dprintf(STDERR_FILENO, ERR_NOREAD, argv[1]), exit(98);
-to_fp = open(argv[2], O_WRONLY | 0_CREAT | 0_TRUNC, PERMISSIONS);
+to_fp = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 if (to_fp == -1)
 dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 
