@@ -27,7 +27,7 @@ bytes = write(fp, text_content, length);
 close(fp);
 
 if (bytes == 1)
-return (0);
+return (1);
 else
 return (-1);
 }
